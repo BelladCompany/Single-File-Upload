@@ -43,7 +43,6 @@
       overflow: hidden;
     }
 
-    /* ── Grid lines background ── */
     body::before {
       content: '';
       position: fixed;
@@ -56,7 +55,6 @@
       z-index: 0;
     }
 
-    /* ── Floating particles ── */
     .particles {
       position: fixed;
       inset: 0;
@@ -80,7 +78,6 @@
       100% { transform: translateY(-10vh) translateX(20px); opacity: 0; }
     }
 
-    /* ── Soft neumorphic orbs in background ── */
     .orb {
       position: fixed;
       border-radius: 50%;
@@ -110,7 +107,6 @@
       padding: 24px 20px;
     }
 
-    /* ── Header ── */
     .header {
       text-align: center;
       margin-bottom: 20px;
@@ -164,7 +160,6 @@
       font-weight: 300;
     }
 
-    /* ── Card ── */
     .card {
       width: 100%;
       max-width: 540px;
@@ -175,7 +170,6 @@
       animation: floatUp 0.9s cubic-bezier(.22,1,.36,1) 0.15s both;
     }
 
-    /* ── Banner ── */
     .banner {
       width: 100%;
       max-width: 540px;
@@ -228,7 +222,6 @@
       line-height: 1.6;
     }
 
-    /* ── File rows ── */
     .file-rows {
       display: flex;
       flex-direction: column;
@@ -254,9 +247,7 @@
       box-shadow: var(--shadow-raised);
     }
 
-    .file-label.has-file {
-      box-shadow: var(--shadow-pressed);
-    }
+    .file-label.has-file { box-shadow: var(--shadow-pressed); }
 
     .file-icon {
       width: 46px; height: 46px;
@@ -271,7 +262,6 @@
     .icon-1::after { content: ''; position: absolute; bottom: 3px; left: 6px; right: 6px; height: 2px; background: #6c63ff; border-radius: 2px; opacity: 0.5; }
 
     .file-icon svg { width: 22px; height: 22px; }
-
     .file-info { flex: 1; min-width: 0; }
 
     .file-title {
@@ -310,10 +300,7 @@
       transition: all 0.35s cubic-bezier(.34,1.56,.64,1);
     }
 
-    .file-label.has-file .check-badge {
-      opacity: 1;
-      transform: scale(1);
-    }
+    .file-label.has-file .check-badge { opacity: 1; transform: scale(1); }
 
     input[type="file"] {
       position: absolute;
@@ -326,7 +313,6 @@
       pointer-events: none;
     }
 
-    /* ── Status bar ── */
     .status-bar {
       margin-top: 16px;
       background: var(--bg);
@@ -339,11 +325,7 @@
       animation: floatUp 0.7s cubic-bezier(.22,1,.36,1) 0.38s both;
     }
 
-    .status-left {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
+    .status-left { display: flex; align-items: center; gap: 14px; }
 
     .count-pill {
       background: var(--bg);
@@ -393,7 +375,6 @@
     }
 
     .dot.active {
-      background: var(--bg);
       box-shadow:
         inset 3px 3px 6px #b8bec9,
         inset -3px -3px 6px #ffffff,
@@ -410,7 +391,6 @@
       box-shadow: 0 0 6px var(--success);
     }
 
-    /* ── Footer ── */
     .footer {
       margin-top: 14px;
       font-family: 'Fira Code', monospace;
@@ -428,10 +408,9 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* ═══════════════════════════════════════════════
+    /* ═══════════════════════════════════════════
        NEUMORPHIC LOADING ELEMENT
-       Runs continuously — page closes automatically
-    ═══════════════════════════════════════════════ */
+    ═══════════════════════════════════════════ */
 
     .loading-dock {
       width: 100%;
@@ -453,7 +432,6 @@
       overflow: hidden;
     }
 
-    /* Sliding accent bar along the top edge */
     .loading-card::before {
       content: '';
       position: absolute;
